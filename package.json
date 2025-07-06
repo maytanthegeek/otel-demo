@@ -1,0 +1,25 @@
+{
+  "name": "otel-demo",
+  "module": "server/index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@opentelemetry/exporter-metrics-otlp-http": "^0.202.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.202.0",
+    "@opentelemetry/instrumentation-express": "^0.51.0",
+    "@opentelemetry/instrumentation-http": "^0.202.0",
+    "@opentelemetry/winston-transport": "^0.13.0",
+    "express": "^5.1.0",
+    "winston": "^3.17.0"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
